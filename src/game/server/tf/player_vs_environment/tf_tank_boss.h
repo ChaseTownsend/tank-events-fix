@@ -116,6 +116,8 @@ inline void CTFTankBoss::DefineOnKilledOutput( EventInfo *eventInfo )
 	{
 		m_onKilledEventInfo.m_action = eventInfo->m_action;
 		m_onKilledEventInfo.m_target = eventInfo->m_target;
+		m_onKilledEventInfo.m_param = eventInfo->m_param;
+		m_onKilledEventInfo.m_delay = eventInfo->m_delay;
 	}
 }
 
@@ -125,6 +127,8 @@ inline void CTFTankBoss::DefineOnBombDroppedOutput( EventInfo *eventInfo )
 	{
 		m_onBombDroppedEventInfo.m_action = eventInfo->m_action;
 		m_onBombDroppedEventInfo.m_target = eventInfo->m_target;
+		m_onBombDroppedEventInfo.m_param = eventInfo->m_param;
+		m_onBombDroppedEventInfo.m_delay = eventInfo->m_delay;
 	}
 }
 
